@@ -1,116 +1,131 @@
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+    color: black;
 }
 
-body {
-    background-color: #49B6FF;
-    background-size: cover;
+.content-wrap {
+    margin: 0 100px;
 }
 
-.siteContainer {
-    width: 95%;
-    margin: auto;
-    background-color: #779BE7;
-}
-
-.wrapper {
-    width: 95%;
-    margin: auto;
-    background-color: #a480CF;
-}
-
-.container {
-    background-color: #D264B6;
-    width: 95%;
-    margin: auto;
-    
-}
-
-.head ul {
-    list-style: none;
-    margin: auto;
-    background-color: #ff499E;
-    padding: 30px;
-    font-size: 24px;
-    display: flex;
-    justify-content: end;
-    width: 90%;
-    
-}
-
-.head ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    text-transform: uppercase;
-
-}
-
-.head ul li {
-    display: inline-block;
-
-}
-
-.head ul li::after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    display: block;
-    background: #fff;
-    transition: 1s;
-
-}
-
-.head ul li:hover:after {
+/* start of navbar*/
+.navbar-section {
+    top: 0;
+    position: fixed;
     width: 100%;
 }
 
-.headlink {
+.navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
 }
 
-.home {
+.sallybetz {
+    font-size: 25px;
+}
+
+.navbar-link {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* end of navbar*/
+/* start of home*/
+
+.home-background {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.home-box {
+    padding-top: 150px;
     display: flex;
-    background-color: #fff;
-    color: #fff;
-    background-color: #a480CF;
-    flex-direction: column;
-    padding: 100px;
+    flex-wrap: wrap;
+
+}
+
+.home-text {
+    width: 50%;
+    padding-top: 10px;
 }
 
 .hi {
-    font-size: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+    font-size: 55px;
 }
 
-.introImg {
-    
+.sally-betz {
+    font-size: 85px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.email-dev {
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+.small-bio {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+a.cv {
+    padding-left: 100px;
+    text-decoration: none;
+}
+
+.sal-pic {
+    max-width: 400px;
+    width: 100%;
+    padding-left: 80px;
+}
+
+/* end of home*/
+/* start of skills*/
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.my-skill {
+    font-size: 32px;
+}
+
+.skill-icon-box {
     display: flex;
     flex-direction: row;
-}
-
-.intro {
-    font-size: 32px;
-    padding: 20px;
-    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-.imgOne {
+.icon-box {
+    padding: 20px 70px;
+    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    border: solid 3px #a5b8eb;
+    border-radius: 25%;
+}
+
+.icon-box img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (){
     
-}
-
-.salstikr {
-    width: 60%
-}
-
-.space {
-    height: 1000px;
 }
