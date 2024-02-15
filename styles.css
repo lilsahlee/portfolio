@@ -38,17 +38,23 @@
 /* start of home*/
 
 .home-background {
-    background-size: cover;
-    width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 .home-box {
     padding-top: 150px;
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .home-text {
@@ -63,7 +69,6 @@
 .sally-betz {
     font-size: 85px;
     padding-top: 10px;
-    padding-left: 20px;
 }
 
 .email-dev {
@@ -75,57 +80,80 @@
     padding-top: 10px;
     width: 100%;
     font-size: 24px;
-    padding-bottom: 40px;
+    
 }
 
 a.cv {
-    padding-left: 100px;
     text-decoration: none;
+    padding-top: 20px;
+   display: block;
 }
 
 .sal-pic {
     max-width: 400px;
     width: 100%;
-    padding-left: 80px;
 }
 
 /* end of home*/
 /* start of skills*/
-
-.skills-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.my-skill {
-    font-size: 32px;
-}
-
-.skill-icon-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 60px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.icon-box {
-    padding: 20px 70px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border: solid 3px #a5b8eb;
-    border-radius: 25%;
-}
-
 .icon-box img {
     width: 200px;
     height: 200px;
 }
 
-@media screen and (){
+
+
+.skills-box {
+    padding-top: 50px;
+}
+
+@media (max-width: 1600px){
     
+}
+
+@media (max-width: 1040px){
+    .sal-pic {
+        max-width: 300px;
+    }
+    .hi {
+        font-size: 35px;
+    }
+    
+    .sally-betz {
+        font-size: 65px;
+    }
+    
+    .email-dev {
+        font-size: 35px;
+        padding-top: 10px;
+    }
+    
+    .small-bio {
+        width: 100%;
+        font-size: 18px;
+    }
+    .home-text {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-link {
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    .sallybetz {
+        font-size: 18px;
+    }
+    
+    .sal-pic {
+        max-width: 200px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+
 }
