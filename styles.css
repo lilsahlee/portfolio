@@ -12,9 +12,10 @@
     top: 0;
     position: fixed;
     width: 100%;
+    background-color: #fdfdfe;
 }
 
-.navbar {
+.navbar-box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -48,7 +49,7 @@
 }
 
 .home-box {
-    padding-top: 150px;
+    padding-top: 140px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -98,27 +99,38 @@ a.cv {
 
 /* end of home*/
 /* start of skills*/
-.skill-icon-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px; /* Adjust the gap between grid items */
-}
-
-.icon-box {
+.my-skill {
+    font-size: 60px;
+    padding: 120px 0 50px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #cf888c;
+  }
+  .skills-box {
     text-align: center;
-    padding: 20px;
-    border: 3px solid #c0c0c9;
-    border-radius: 10%;
-}
-
-.skill-image {
+  }
+  
+  .skill-icon-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 100px;
+  }
+  
+  .icon-box {
+   width: 350px;
     height: auto;
-    max-width: 200px;
-}
+    border: 2px solid #7e819a;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    margin: 0 0 70px 0;
+    background-color: #fffdf3;
+  }
+  
+  .skill-image {
+    max-height: 100px;
+  }
 @media (max-width: 3000px){
     .content-wrap {
         margin: 0 200px;
@@ -152,8 +164,12 @@ a.cv {
 }
 
 @media (max-width: 1040px){
+    .navbar-link {
+        padding-left: 5px;
+        font-size: 15px;
+    }
     .sal-pic {
-        max-width: 200px;
+        max-width: 300px;
     }
     
     .hi {
@@ -185,31 +201,52 @@ a.cv {
     }
     .navbar-link {
         padding-left: 5px;
-        font-size: 14px;
+        font-size: 20px;
     }
     .home-box {
         text-align: center;
     }
+    .home-text {
+        padding-top: 40px;
+    }
     
     .sal-pic {
-        max-width: 150px;
+        max-width: 200px;
     }
+    .hi {
+        font-size: 40px;
+    }
+    .sally-betz {
+        font-size: 60px;
+    }
+    
+    .email-dev {
+        font-size: 35px;
+    }
+    .small-bio {
+        font-size: 25px;
+    }
+    .cv {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px){
     .hi {
         font-size: 35px;
     }
     .sally-betz {
-        font-size: 28px;
+        font-size: 45px;
     }
-    
     
     .email-dev {
-        font-size: 20px;
+        font-size: 25px;
     }
     .small-bio {
-        font-size: 15px;
+        font-size: 20px;
     }
     .cv {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
