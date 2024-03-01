@@ -140,6 +140,11 @@ a.cv {
     .navbar-link {
         padding: 10px;
     }
+    .skill-icon-box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-top: 100px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -174,11 +179,7 @@ a.cv {
     }
     /* end of home*/
     /* start of skills*/
-    .skill-icon-box {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding-top: 100px;
-    }
+    
 }
 
 @media (max-width: 1040px) {
@@ -217,9 +218,7 @@ a.cv {
 
     /* end of home*/
     /* start of skills*/
-    .my-skill {
-        font-size: 40px;
-    }
+    
     .skill-icon-box {
         display: grid;
         grid-template-columns: auto auto;
@@ -237,7 +236,7 @@ a.cv {
     .navbar-link {
         padding: 2px;
     }
-
+    
     /* end of navbar*/
     /* start of home*/
     .home-box {
@@ -274,7 +273,15 @@ a.cv {
 
     /* end of home*/
     /* start of skills*/
-    
+    .my-skill {
+        font-size: 50px;
+    }
+    .skill-image {
+        max-height: 60px;
+    }
+    .skill-icon-box {
+        padding-top: 60px;
+    }
 }
 
 @media (max-width: 600px) {
