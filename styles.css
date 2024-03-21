@@ -6,6 +6,13 @@
     color: black;
 }
 
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 400px 0;
+}
 
 /* start of navbar*/
 .navbar-section {
@@ -20,7 +27,6 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 10px;
-
 }
 
 .sallybetz {
@@ -98,6 +104,7 @@ a.cv {
 
 /* end of home*/
 /* start of skills*/
+
 .my-skill {
     padding: 120px 0 50px 0;
     display: flex;
@@ -116,19 +123,62 @@ a.cv {
     border: 2px solid #abaec5;
     border-radius: 12px;
     padding: 30px;
-    position: relative;
     margin: 0 0 70px 0;
     background-color: #f6f5fa;
     box-shadow: 0 0 3px #abaec5;
 }
 
+/* end of skills*/
+/* start of about */
 
+.about-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+.sal-in-tree {
+    max-width: 400px;
+    border-radius: 50px;
+    border: 5px solid #7e819a;
+}
+
+.know-me-box {
+    padding-left: 20px;
+}
+
+.know-me {
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-sally {
+    font-size: 28px;
+    padding-top: 20px;
+    color: #cf888c;
+}
+
+.big-bio {
+    max-width: 700px;
+    padding-top: 20px;
+}
+
+/* end of about */
+/* start of portfolio */
+
+.email-image {
+    max-width: 400px;
+}
+
+
+/* end of portfolio */
+/* start of media queries */
 
 @media (max-width: 3000px) {
     .content-wrap {
         margin: 0 200px;
     }
-   
+
     .skill-image {
         max-height: 100px;
         font-size: 50px;
@@ -137,9 +187,11 @@ a.cv {
     .my-skill {
         font-size: 50px;
     }
+
     .navbar-link {
         padding: 10px;
     }
+
     .skill-icon-box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -157,7 +209,6 @@ a.cv {
     /* start of home*/
     .home-box {
         display: flex;
-        justify-content: center;
     }
 
     .sal-pic {
@@ -179,9 +230,10 @@ a.cv {
     .small-bio {
         font-size: 20px;
     }
+
     /* end of home*/
     /* start of skills*/
-    
+
 }
 
 @media (max-width: 1040px) {
@@ -192,8 +244,10 @@ a.cv {
 
     /* end of navbar*/
     /* start of home*/
-    .sal-pic {
-        max-width: 300px;
+
+    .home-box {
+        display: flex;
+        justify-content: center;
     }
 
     .hi {
@@ -220,12 +274,12 @@ a.cv {
 
     /* end of home*/
     /* start of skills*/
-    
+
     .skill-icon-box {
         display: grid;
         grid-template-columns: auto auto;
         padding-top: 60px;
-        
+
     }
 }
 
@@ -233,13 +287,15 @@ a.cv {
     .content-wrap {
         margin: 0 50px;
     }
+
     .sallybetz {
         font-size: 20px;
     }
+
     .navbar-link {
         padding: 2px;
     }
-    
+
     /* end of navbar*/
     /* start of home*/
     .home-box {
@@ -279,9 +335,11 @@ a.cv {
     .my-skill {
         font-size: 50px;
     }
+
     .skill-image {
         max-height: 60px;
     }
+
     .skill-icon-box {
         padding-top: 60px;
     }
@@ -314,5 +372,9 @@ a.cv {
     /* start of skills*/
     .my-skill {
         font-size: 25px;
+    }
+
+    .skill-text {
+        font-size: 14px;
     }
 }
