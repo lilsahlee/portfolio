@@ -6,8 +6,6 @@
     color: black;
 }
 
-
-
 /* start of navbar*/
 .navbar-section {
     top: 0;
@@ -175,6 +173,7 @@ a.cv {
 
 .my-projects {
     font-size: 50px;
+    color: #cf888c;
 }
 
 .project-box {
@@ -196,7 +195,7 @@ a.cv {
 /* start footer */
 
 .footer-box {
-padding-top: 80px;
+    padding-top: 80px;
 }
 
 .footer-background {
